@@ -1,16 +1,54 @@
-# React + Vite
+# Todo_list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo List app built with React + Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js installed (preferably version 14 or above)
+- npm (comes with Node.js)
+- Git
 
-## React Compiler
+## How to Clone and Run
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# 1. Clone the repository
+git clone https://github.com/jthhn/Todo_list.git
 
-## Expanding the ESLint configuration
+# 2. Go inside the project folder
+cd Todo_list
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
+npm run dev
+
+# 5. Open your browser and go to
+#    http://localhost:5173
+
+```
+
+## Available Scripts
+
+| Command       | What it does                                         |
+| ------------- | ---------------------------------------------------- |
+| npm install   | Installs all required node modules                   |
+| npm run dev   | Starts the development server with hot module reload |
+| npm run build | Builds the app for production (outputs dist/)        |
+| npm run lint  | Runs ESLint to check for code style & issues         |
+
+Project Structure
+
+```arduino
+Todo_list/
+├── public/            # static public files (index.html etc.)
+├── src/
+│   ├── App.jsx        # main React component
+│   ├── index.jsx      # entry file
+│   └── ...            # other components, styles etc.
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+
+```
